@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- cdnからjquery読み込み -->
-    <script
+    <script>
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
-    ></script>
+    </script>
+
+    <script
+    src="jquery-ui.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
     
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+	</script><!-- 2022/7/16 追加　-->
+
     <script src="./js/main.js"></script>
     <title>トップページ</title>
   </head>
@@ -21,20 +30,88 @@
       <div class="inner">
         <div id="menu_btn"></div>
         <p id="header_logo">
-          <a href="./index.html"><img src="./images/logo.svg" alt="" /></a>
+          <a href="./index.html"><img src="./images/midori1.PNG" alt="" width="200" height="50"></a>
         </p>
         <ul id="global_menu">
-          <li><a href="./profile.html">profile</a></li>
-          <li><a href="./works.html">works</a></li>
-          <li><a href="./slide.html">slide</a></li>
-          <li><a href="./report.html">report</a></li>
+          <li><a href="./profile.html"><img src="./images/gallery1.PNG" alt="" width="200
+            " height="50"/></a></li>
+          <li><a href="./works.html"><img src="./images/followus1.PNG" alt="" width="200
+            " height="50"/></a></li>
         </ul>
       </div>
     </header>
 
-    <div class="top_eye_catch">みどりのひみつきち</div>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 
-    <div class="contents">
+    <div class="top_eye_catch"><!--img src="./images/profole111.PNG" alt="" width="475" height="50"--> </div>
+    <div class="profile">
+    <div class="name"><!-- 2022/7/16 追加　-->
+     <img src="./images/profole1111.PNG" alt="" width="400" height="50">
+     </div><!-- 2022/7/16 追加　-->
+     <br>
+     <br>
+     <br>
+    <div id="midori"><h1>えぐち みどり</h1></div>
+     <br>
+     <h2>なんとかなるさをモットーに</h2>
+     <h2>マイペースにぼちぼち好きな</h2>
+     <h2>絵を描いています</h2>
+     <h2>おんなのこを描くのが好きです</h2>
+     <h2>なんでも屋なので</h2>
+     <h2>ぞうけいから動画など色々</h2>
+     <h2>れんらくはfollow usまで</h2>
+     <br>
+     <br>
+    </div>
+
+    <!--script>
+   $(function(){
+     $("profile").mousemove(function(){
+      $("img").attr("src",$(this).attr("href")) 
+      .attr("./images/profole1111.PNG","./ura.html").attr("img","a")
+     })
+    })
+   </script-->
+
+   <script>
+    　$(function(){
+       $(".profile").mousedown(function(){
+        $(this).mousemove(function(){
+          $(this).mouseup(function(){
+            $(".name").load("./ura.html");
+       })
+       })
+       })
+       })
+     </script><!-- 2022/7/16 変更　-->
+
+   <!--script>
+    let is_drag = false;
+    $(body).on('mousedown', function(){
+      is_drag = true;
+     }
+     $(body).on('mouseup mouseleave', function(){
+      is_drag = false;
+     }
+     $(body).on('mousemove', function(){
+       if (is_drag === true) {
+
+       }
+     }
+     )));
+    </script-->
+
+    <div class="sakuhin1">
+        <img src="./images/asitanozibun.gif" alt="" width="400" height="50">
+
+    </div>
+    <div class="sakuhin2">
+
+    </div>
+
+    <!--div class="contents">
       <section class="sec">
         <h2>更新履歴</h2>
         <ul>
@@ -74,8 +151,8 @@
           </div>
         </div>
       </section>
-    </div>
+</div-->
 
-    <footer>名前など</footer>
+    <footer>えぐちみどり</footer>
   </body>
 </html>
