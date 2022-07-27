@@ -133,11 +133,12 @@ header .inner {
 
 #global_menu li.current::before {
   content: "";
-  bottom: 2px;
+  bottom: 10px;
   position: absolute;
-  width: 100%;
-  height: 10px;
-  background-color: #ccc;
+  left: 36%;
+  width: 30%;
+  height: 1.5px;
+  background-color: rgb(131, 145, 133);
 }
 
 #menu_btn{
@@ -422,7 +423,13 @@ profileページ
   margin-right: 30px;
 }
 
+/* =================================================
+uraページ
+================================================= */
 
+.ura{
+  background-color: rgb(122, 151, 130);
+}
 
 /*======================================================
 汎用
